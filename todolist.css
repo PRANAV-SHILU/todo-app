@@ -72,11 +72,6 @@ li {
     border-bottom: 1px solid #eee;
 }
 
-li:last-child {
-    border-bottom: none;
-}
-
-/* SEE  */
 li input[type="checkbox"] {
     margin-right: 15px;
     cursor: pointer;
@@ -96,6 +91,11 @@ li input[type="text"].edit-mode {
     border: 1px solid #ccc;
     border-radius: 4px;
     display: none;
+}
+
+input[type="text"].edit-mode:focus {
+    border-color: #888;
+    outline: none;
 }
 
 li.completed label {
