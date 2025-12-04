@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.separator {
+    margin-bottom: 15px;
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#add-btn {
+    background: none;
+    border: none;
+    color: #777;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+#add-btn:hover {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* SEE  */
+li input[type="checkbox"] {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+li label {
+    flex-grow: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
+li input[type="text"].edit-mode {
+    flex-grow: 1;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none;
+}
+
+li.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li.editMode label {
+    display: none !important;
+}
+
+li.editMode input[type="text"].edit-mode {
+    display: block !important;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.btn-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #888;
+    padding: 2px 5px;
+}
+
+.btn-action:hover {
+    color: #333;
+}
