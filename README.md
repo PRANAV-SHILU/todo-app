@@ -1,6 +1,7 @@
-# Minimal To-Do List
+# Classical To-Do List
 
 >A clean, single-page to-do app using only HTML, CSS, and JavaScript.
+>It gives you feel like an handbook, you can add, delete, edit or modify the status wether completed or not completed.
 
 ---
 
